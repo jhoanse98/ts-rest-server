@@ -1,6 +1,7 @@
 import dotenv from 'dotenv'
+import Servidor from './models/server'
 dotenv.config()
 
-export const  nombre="Gordis";
+const servidor = new Servidor();
 
-console.log(nombre);
+servidor.listen()
